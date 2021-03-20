@@ -21,7 +21,9 @@ contract Token {
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
 
+    // Function runs everytime we put this contract on the Blockchain 
     constructor() public {
+        // We take all tokens - totalSupply - and assign them to a user that deployed the smart contract
         balanceOf[msg.sender] = totalSupply;
     }
 
