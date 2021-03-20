@@ -6,6 +6,11 @@ contract Token {
     uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8   public decimals = 18;
 
+    // 1.00 expressed in an ethereum smart contract would be 100
+
+    // Wei is the smalles Ethereum value - ether uses 18 decimal places.
+    // 1000000000000000000
+
     event Transfer(
         address indexed _from,
         address indexed _to,
